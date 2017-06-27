@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <link rel="stylesheet" type="text/css" href="todoliststyles.css">
+  </head>
+  
+  <body>
+    <h1>To Do List</h1>
+
+    <div>
+      <p>Type a to-do task to put into your to-do list: </p>
+      <input id="addText" type="text">
+      <button onclick="controller.addToDo()">Add</button>
+    </div>
+
+    <div>
+      <p>Type which number (i.e. 1 for the first item, 2 for the 2nd, etc.) to-do task you want to edit in the first box and the replacement text in the second box: </p>
+      <input id="changePosition" type="number">
+      <input id="changeText" type="text">
+      <button onclick="controller.changeToDo()">Change</button>
+    </div>
+
+    <div>
+      <p>Type which number (i.e. 1 for the first item, 2 for the 2nd, etc.) to-do task you want to toggle completion for: </p>
+      <input id="togglePosition" type="number">
+      <button onclick="controller.toggleCompleted()">Toggle</button>
+    </div>
+
+    <div>
+      <button onclick="controller.toggleAll()">Toggle All</button>
+    </div>
+
+    <ul></ul>
+
+    <script src="todolistscript.js"></script>
+  </body>
+</html>

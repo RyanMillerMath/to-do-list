@@ -1,0 +1,15 @@
+body {
+  text-align: center;
+}
+
+div, ul li {
+  margin: 15px 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.delete-button {
+  margin-left: 10px;
+}
